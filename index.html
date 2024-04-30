@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>toogle.com</title>
+<style type="text/css">
+
+table {     
+   border-color:blue;
+   border-style:outset;
+    background-color:black;
+   border-width:5px;
+   height:50px; width:160px;
+   
+}
+th{border:none;
+font-size:xx-large;
+color:white;
+
+}
+button{background-color:black;
+
+border-color:yellow;
+color:White;
+width:90px;
+height:40px;
+border-width:4px;
+background-clip:border-box;
+background-break:continuous;
+background-repeat:repeat-x;
+}
+input { border-width:2px;
+width:200px;
+height:35px;
+background-color:white;
+color:black;
+
+}
+iframe{ width:350px; height:1000px;}
+</style>
+</head>
+
+<body>
+
+<table align="center" ><th>toogle</th></table>
+<br>
+<input type="search" id="x">
+<button  onclick="h()">submit</button>
+<p id="y"></p>
+
+<script type="text/javascript">
+function h() { 
+    var word = document.getElementById("x").value;
+    var url = "https://www.google.com/search?q=" + word;
+    var one = "jay sri ram";
+    var two = "hi";
+    var tin = "जय श्री राम";
+    var chaar = "आज कि तारिख क्या है?";
+    var ad = "कमेंट गुरू कौन है?";
+    var ved ="वेद";
+    var kuran="kuran";
+    var k="कुराण";
+    var gita="भागवत गीता";
+   var gi= "bhagvtgita" ;
+    var age ="मेरी उम्र बताओ";
+    var ed="एडिटर मोड";
+    var view="multi window";
+    var game="गेम";
+     var gam="game";
+   
+    if (word === one) { 
+        document.getElementById("y").innerHTML = "जय श्री राम";
+    } 
+    else if (word === gita) { 
+    document.getElementById("y").innerHTML='<iframe src="https://thegitahindi.com/flip-book-in-hindi/"></iframe>';
+    
+    }
+    else if (word === game) { 
+    document.getElementById("y").innerHTML='<iframe src="https://°°°°toogle°°°°√.on.drv.tw/Toogle/game.html"></iframe>';
+    
+    }
+    else if (word === gam) { 
+    document.getElementById("y").innerHTML='<iframe src="https://°°°°toogle°°°°√.on.drv.tw/Toogle/game.html"></iframe>';
+    
+    }
+    
+    else if (word === view) { 
+    document.getElementById("y").innerHTML='<iframe src="https://°°°°toogle°°°°√.on.drv.tw/Toogle/multi window.html"></iframe>';
+    
+    }
+     else if (word === gi) { 
+    document.getElementById("y").innerHTML='<iframe src="https://thegitahindi.com/flip-book-in-hindi/"></iframe>';
+    
+    } 
+    else if (word === age) { 
+    var b = prompt("आप का जन्म किस साल मे हुआ वो लिखिये जेसे.1999,2002...");
+    var s = prompt("अभी कोणसा साल चल रहा हे वह लिखो");
+    document.getElementById("y").innerHTML=s-b +"   "+"साल के हो आप";
+    }
+    else if (word === two ) { 
+    
+        document.getElementById("y").innerHTML = "जय श्री राम🙏";
+    } 
+    else if (word === tin ) { 
+    document.getElementById("y").innerHTML = "जय श्री राम🙏🙏";
+    
+    } 
+    else if (word === chaar) { 
+    var d = Date();
+  document.getElementById("y").innerHTML=d;
+    
+    } 
+    else if (word === ad) { 
+    document.getElementById("y").innerHTML ="लिंक पे क्लिक करके देखलो मेरे को टाईम नही है अभी"+'<br>'+'<a href="https://www.facebook.com/profile.php?id=100090276936235&mibextid=ZbWKwL">link</a>';
+    } 
+    else if (word === ved) { 
+    var ved= "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.xn--j2b3a4c.com/&ved=2ahUKEwjZo928ydWFAxXw6jgGHfoUDZ4QFnoECA4QAQ&usg=AOvVaw0ql8wdTgM_e3zS3JrEIfwm";
+    open(ved);
+   
+    } 
+    else if (word === kuran) { 
+    document.getElementById("y").innerHTML='<iframe src="https://quraninhindi.com/index.php" ></iframe>';
+    
+   
+    } 
+    else if (word === k) { 
+   document.getElementById("y").innerHTML='<iframe src="https://quraninhindi.com/index.php" ></iframe>';
+    
+    
+    } 
+    else if (word === ed) { 
+    document.getElementById("y").innerHTML='<iframe src="https://xn--toogle-vjaaaagaaa4249j.on.drv.tw/Toogle/%E0%A4%B8%E0%A4%82%E0%A4%AA%E0%A4%BE%E0%A4%A6%E0%A4%A8.html"></iframe>';
+    
+    
+    } 
+    
+
+    
+    else { 
+       open(url);
+    }
+}
+
+
+
+</script>
+</body>
+</html>
