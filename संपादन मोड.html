@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1">
+<style type="text/css">
+textarea {width:320px; height:500px;
+
+border-style:solid;
+
+}
+button {width:90px;height:40px;
+border-color:blue;color:white;
+background:black;
+font-weight:bold;
+border-width:thick;
+}
+
+</style>
+</head>
+<body  >
+<font color="teal" >
+<textarea id="t"></textarea>
+<details ><summary>font color</summary>
+<button onclick="f()"   >white</button>
+<button onclick="black()"   >black</button>
+<button onclick="rde()"   >red</button>
+</details>
+
+<details ><summary>background color</summary>
+<button onclick="red()" ondblclick="rd()" >red</button>
+<button onclick="aqua()" ondblclick="rd()" >aqua</button>
+<button onclick="teal()" ondblclick="rd()" >teal</button>
+<button onclick="green()" ondblclick="rd()" >green</button>
+<button onclick="yellow()" ondblclick="rd()" >yellow</button>
+</details>
+<details><summary>style</summary>
+
+<button onclick="bold()">bold</button>
+<button onclick="italic()">italic</button>
+<button onclick="nobold()">✖️bold</button>
+<button onclick="noitalic()">✖️italic</button>
+</details>
+<details><summary>font size</summary>
+
+<input type="number" id="n" ></input>
+<button onclick="size()">submit</button>
+</details>
+ <details><summary>एक शब्द को अनेक शब्द बनाओ</summary>
+ <br>
+ यहा जो शब्द लिखना हे वो लिखो👇
+<input id="id"    ></input>
+<br></br>
+👇यहा कितनी बार लिखवाना हे वो अंक लिखिये
+<input type="number"  id="oo"  ></input>
+<br></br>
+<button onclick="i()">submit</button></details>
+
+<script type="text/javascript">
+function rd() {
+    document.getElementById("t").style.backgroundColor="white";
+    }
+    function red() {
+    document.getElementById("t").style.backgroundColor="red";
+    }
+    function aqua() {
+    document.getElementById("t").style.backgroundColor="aqua";
+    }
+    function teal() {
+    document.getElementById("t").style.backgroundColor="teal";
+    }
+    function green() {
+    document.getElementById("t").style.backgroundColor="green";
+    }
+    function yellow() {
+    document.getElementById("t").style.backgroundColor="yellow";
+    }
+    function bold() {
+    document.getElementById("t").style.fontWeight="bold";
+    }
+    function italic() {
+    document.getElementById("t").style.fontStyle="italic";
+    }
+    function nobold() {
+    document.getElementById("t").style.fontWeight="normal";
+    }
+    function noitalic() {
+    document.getElementById("t").style.fontStyle="normal";
+    }
+    function size() {
+    var number =document.getElementById("n").value;
+    var get=number+"px";
+    document.getElementById("t").style.fontSize=get;
+    }
+    function i(){
+    var x =document.getElementById("id").value;
+    var y =document.getElementById("oo").value;
+    
+    for ( var  i= 0; i<y; i++) { 
+     document.write(x+'<br>'+' <br>');
+    } document.write('<table Border="2px"><th>फिरसे एडिटर मोड पे जाने केलिये toogle search boxमे एडिटर मोड लिखिये </th></table>' );}
+
+function f (){       
+document.getElementById("t").style.color="white";
+
+}
+function black (){       
+document.getElementById("t").style.color="black";
+
+}
+function rde (){       
+document.getElementById("t").style.color="red";
+
+}
+</script>
+</body>
+</html>
